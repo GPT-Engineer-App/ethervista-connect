@@ -83,19 +83,7 @@ const TargetToOriginator = () => {
           </Select>
         </div>
         
-        <div className="space-y-2">
-          <Label>Misc. Options</Label>
-          <div className="space-y-2">
-            <div className="flex items-center space-x-2">
-              <Checkbox id="keepTcpConnection" defaultChecked />
-              <Label htmlFor="keepTcpConnection">Keep TCP Connection Active</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Checkbox id="redundantOwner" />
-              <Label htmlFor="redundantOwner">Redundant Owner</Label>
-            </div>
-          </div>
-        </div>
+        {/* Misc. Options removed from here */}
       </CardContent>
     </Card>
   );

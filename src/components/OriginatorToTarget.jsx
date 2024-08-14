@@ -83,26 +83,7 @@ const OriginatorToTarget = () => {
           </Select>
         </div>
         
-        <div className="space-y-2">
-          <Label>Forward Open Parameters</Label>
-          <div className="space-y-2">
-            <Label>Transport Trigger</Label>
-            <Select defaultValue="cyclic">
-              <SelectTrigger>
-                <SelectValue placeholder="Select transport trigger" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="cyclic">Cyclic</SelectItem>
-                <SelectItem value="changeOfState">Change of State</SelectItem>
-                <SelectItem value="application">Application</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div>
-            <Label>Timeout Multiplier</Label>
-            <Input type="number" defaultValue={16} />
-          </div>
-        </div>
+        {/* Forward Open Parameters removed from here */}
       </CardContent>
     </Card>
   );
