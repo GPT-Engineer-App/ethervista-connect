@@ -8,9 +8,9 @@ import MiscOptions from './MiscOptions';
 
 const ConnectionConfiguration = () => {
   return (
-    <Card className="w-full max-w-4xl mx-auto">
+    <Card className="w-full max-w-4xl mx-auto bg-dark-200 border-dark-300">
       <CardHeader>
-        <CardTitle>Class 1 Connection Configuration</CardTitle>
+        <CardTitle className="text-blue-500">Class 1 Connection Configuration</CardTitle>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <OriginatorToTarget />
