@@ -6,18 +6,18 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const ForwardOpenParameters = ({ className }) => {
   return (
-    <Card className={className}>
+    <Card className={`bg-dark-300 border-dark-300 ${className}`}>
       <CardHeader>
-        <CardTitle>Forward Open Parameters</CardTitle>
+        <CardTitle className="text-light-100 text-lg font-medium">Forward Open Parameters</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <Label>Transport Trigger</Label>
+          <Label className="text-light-200 text-sm">Transport Trigger</Label>
           <Select defaultValue="cyclic">
-            <SelectTrigger>
+            <SelectTrigger className="bg-dark-200 border-dark-300 text-light-100 text-sm">
               <SelectValue placeholder="Select transport trigger" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-dark-200 border-dark-300">
               <SelectItem value="cyclic">Cyclic</SelectItem>
               <SelectItem value="changeOfState">Change of State</SelectItem>
               <SelectItem value="application">Application</SelectItem>
@@ -25,8 +25,8 @@ const ForwardOpenParameters = ({ className }) => {
           </Select>
         </div>
         <div>
-          <Label>Timeout Multiplier</Label>
-          <Input type="number" defaultValue={16} />
+          <Label className="text-light-200 text-sm">Timeout Multiplier</Label>
+          <Input type="number" defaultValue={16} className="bg-dark-200 border-dark-300 text-light-100 text-sm" />
         </div>
       </CardContent>
     </Card>
