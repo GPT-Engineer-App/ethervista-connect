@@ -15,21 +15,21 @@ const TargetToOriginator = () => {
       <CardContent className="space-y-4">
         <RadioGroup defaultValue="instanceId">
           <div className="flex items-center space-x-2">
-            <RadioGroupItem value="instanceId" id="tInstanceId" className="border-light-300" />
+            <RadioGroupItem value="instanceId" id="tInstanceId" className="border-light-300 text-light-100" />
             <Label htmlFor="tInstanceId" className="text-light-200 text-sm">Instance ID</Label>
             <Input type="number" defaultValue={101} className="w-20 ml-2 bg-dark-200 border-dark-300 text-light-100 text-sm" />
           </div>
           <div className="flex items-center space-x-2">
-            <RadioGroupItem value="tagName" id="tTagName" className="border-light-300" />
+            <RadioGroupItem value="tagName" id="tTagName" className="border-light-300 text-light-100" />
             <Label htmlFor="tTagName" className="text-light-200 text-sm">Tag Name</Label>
-            <Input type="text" className="w-full ml-2 bg-dark-200 border-dark-300 text-light-100 text-sm" />
+            <Input type="text" className="w-40 ml-2 bg-dark-200 border-dark-300 text-light-100 text-sm" />
           </div>
         </RadioGroup>
         
         <div className="flex items-center space-x-2">
           <Label className="text-light-200 text-sm">Data Size (bytes)</Label>
           <Input type="number" defaultValue={14} className="w-20 bg-dark-200 border-dark-300 text-light-100 text-sm" />
-          <Checkbox id="tRunIdleHeader" className="border-light-300" />
+          <Checkbox id="tRunIdleHeader" className="border-light-300 text-light-100" />
           <Label htmlFor="tRunIdleHeader" className="text-light-200 text-sm">Run/Idle Header</Label>
         </div>
         
@@ -50,7 +50,7 @@ const TargetToOriginator = () => {
             <SelectTrigger className="bg-dark-200 border-dark-300 text-light-100 text-sm">
               <SelectValue placeholder="Select transport type" />
             </SelectTrigger>
-            <SelectContent className="bg-dark-200 border-dark-300">
+            <SelectContent className="bg-dark-200 border-dark-300 text-light-100">
               <SelectItem value="pointToPoint">Point to point</SelectItem>
               <SelectItem value="multicast">Multicast</SelectItem>
             </SelectContent>
@@ -63,7 +63,7 @@ const TargetToOriginator = () => {
             <SelectTrigger className="bg-dark-200 border-dark-300 text-light-100 text-sm">
               <SelectValue placeholder="Select data size type" />
             </SelectTrigger>
-            <SelectContent className="bg-dark-200 border-dark-300">
+            <SelectContent className="bg-dark-200 border-dark-300 text-light-100">
               <SelectItem value="fixedSize">Fixed size</SelectItem>
               <SelectItem value="variableSize">Variable size</SelectItem>
             </SelectContent>
@@ -76,7 +76,7 @@ const TargetToOriginator = () => {
             <SelectTrigger className="bg-dark-200 border-dark-300 text-light-100 text-sm">
               <SelectValue placeholder="Select priority" />
             </SelectTrigger>
-            <SelectContent className="bg-dark-200 border-dark-300">
+            <SelectContent className="bg-dark-200 border-dark-300 text-light-100">
               <SelectItem value="scheduled">Scheduled</SelectItem>
               <SelectItem value="urgent">Urgent</SelectItem>
             </SelectContent>

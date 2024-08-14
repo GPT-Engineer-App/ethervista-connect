@@ -11,11 +11,11 @@ const MiscOptions = ({ className }) => {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="flex items-center space-x-2">
-          <Checkbox id="keepTcpConnection" defaultChecked className="border-light-300" />
+          <Checkbox id="keepTcpConnection" defaultChecked className="border-light-300 text-light-100" />
           <Label htmlFor="keepTcpConnection" className="text-light-200 text-sm">Keep TCP Connection Active</Label>
         </div>
         <div className="flex items-center space-x-2">
-          <Checkbox id="redundantOwner" className="border-light-300" />
+          <Checkbox id="redundantOwner" className="border-light-300 text-light-100" />
           <Label htmlFor="redundantOwner" className="text-light-200 text-sm">Redundant Owner</Label>
         </div>
       </CardContent>

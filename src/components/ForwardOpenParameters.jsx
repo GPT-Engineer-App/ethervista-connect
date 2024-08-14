@@ -17,7 +17,7 @@ const ForwardOpenParameters = ({ className }) => {
             <SelectTrigger className="bg-dark-200 border-dark-300 text-light-100 text-sm">
               <SelectValue placeholder="Select transport trigger" />
             </SelectTrigger>
-            <SelectContent className="bg-dark-200 border-dark-300">
+            <SelectContent className="bg-dark-200 border-dark-300 text-light-100">
               <SelectItem value="cyclic">Cyclic</SelectItem>
               <SelectItem value="changeOfState">Change of State</SelectItem>
               <SelectItem value="application">Application</SelectItem>
