@@ -4,7 +4,6 @@ import OriginatorToTarget from './OriginatorToTarget';
 import TargetToOriginator from './TargetToOriginator';
 import ConfigurationData from './ConfigurationData';
 import ForwardOpenParameters from './ForwardOpenParameters';
-import MiscOptions from './MiscOptions';
 
 const ConnectionConfiguration = () => {
   return (
@@ -13,7 +12,6 @@ const ConnectionConfiguration = () => {
         <OriginatorToTarget />
         <TargetToOriginator />
         <ForwardOpenParameters className="col-span-full" />
-        <MiscOptions className="col-span-full" />
         <ConfigurationData className="col-span-full" />
       </CardContent>
     </Card>
